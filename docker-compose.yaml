@@ -1,0 +1,5 @@
+services:
+  dispy:
+    build: .
+    container_name: DisPy
+    working_dir: /work
