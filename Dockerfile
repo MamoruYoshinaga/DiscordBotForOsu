@@ -11,5 +11,7 @@ RUN python -m pip install Path
 RUN python -m pip install json
 
 COPY ./work /work
+COPY .env /
+
 WORKDIR /work
 CMD ["python", "osuServer.py"]
