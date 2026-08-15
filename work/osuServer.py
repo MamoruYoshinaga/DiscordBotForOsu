@@ -83,7 +83,7 @@ class OsuApiClient:
                 logger.info(f"OAuth tokenのリクエスト開始")
                 response.raise_for_status()
                 payload = await response.json()
-                json_data = json.dumps(payload, indent=2, ensure_ascii=False)
+                # json_data = json.dumps(payload, indent=2, ensure_ascii=False)
                 # logger.info(f"osu OAuthのresponseのjson:\n{json_data}")
                 token = payload.get('access_token')
                 expires = payload.get('expires_in')

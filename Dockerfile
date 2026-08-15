@@ -8,6 +8,7 @@ RUN python -m pip install discord.py
 RUN python -m pip install aiohttp
 RUN python -m pip install asyncio
 RUN python -m pip install Path
+RUN python -m pip install json
 
 COPY ./work /work
 WORKDIR /work
